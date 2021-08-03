@@ -65,3 +65,11 @@ with mp_hands.Hands(
 
         else:
           print('no fingertip')
+
+    cv2.imshow('Turukka_Hand_Brightness_Control', image)
+    #writer.write(image)
+    if cv2.waitKey(5) == ord('q'):
+      break
+
+cap.release()
+# writer.release()

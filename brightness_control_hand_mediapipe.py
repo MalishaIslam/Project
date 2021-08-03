@@ -54,3 +54,14 @@ with mp_hands.Hands(
           cv2.line(image, (x1, y1), (x2, y2), (120, 0, 120), 3)
           length = math.hypot(x2 - x1, y2 - y1)
           print(length)
+
+          brightness = np.interp(length, [2, 250], [0, 100])
+          brightness_bar = np.interp(length, [2, 250], [85, 50])
+          print(int(length), brightness)
+          sbc.set_brightness(brightness, display=0)
+          print(sbc.get_brightness())
+          cv2.rectangle(image, (150, 50), (400, 85), (131, 238, 255), 3)
+          cv2.rectangle(image, (150, int(brightness_bar)), (400, 85), (131, 238, 255), cv2.FILLED)
+
+        else:
+          print('no fingertip')

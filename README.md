@@ -6,6 +6,9 @@
 ###### Demontration : https://youtu.be/bJ0ujZ9AkqI
 
 
+## File : [Hand_Landmark_Draw_MediaPipe_Hand](https://github.com/MalishaIslam/Project/blob/eea528fcc232b6b73c8e9b1f69d654d40e57b2d1/HandLandmark_Draw)
+## More Info : [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands#python-solution-api)
+
 
 
 

@@ -34,3 +34,23 @@ with mp_hands.Hands(
     # pass by reference.
     image.flags.writeable = False
     results = hands.process(image)
+
+    image.flags.writeable = True
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    if results.multi_hand_landmarks:
+      lmlist = []
+      for hand_landmarks in results.multi_hand_landmarks:
+        for id, lm in enumerate(hand_landmarks.landmark):
+          # print(id, lm)
+          h, w, c = image.shape
+          cx, cy = int(lm.x * w), int(lm.y * h)
+          lmlist.append([id, cx, cy])
+          # print(len(lmlist))
+        if len(lmlist) != 0:
+          x1, y1 = lmlist[4][1], lmlist[4][2]
+          x2, y2 = lmlist[8][1], lmlist[8][2]
+          cv2.circle(image, (x1, y1), 18, (120, 0, 120), cv2.FILLED)
+          cv2.circle(image, (x2, y2), 18, (120, 0, 120), cv2.FILLED)
+          cv2.line(image, (x1, y1), (x2, y2), (120, 0, 120), 3)
+          length = math.hypot(x2 - x1, y2 - y1)
+          print(length)

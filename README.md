@@ -17,6 +17,8 @@
 For this project, mediapip, OpenCV and screen_brightness_control must be installed. pyttsx3 is optional here. 
 
 ##### Text Editor Used : pycharm
+##### [Mediapipe supports 64 bit version python](https://stackoverflow.com/questions/67665724/what-could-be-the-cause-for-the-mediapipe-installation-error-on-windows-with-pyt)
+##### [3.8.8 python version is used in this project](https://github.com/google/mediapipe/issues/1466)
 
 ## File : [Hand_Landmark_Draw_MediaPipe_Hand](https://github.com/MalishaIslam/Project/blob/eea528fcc232b6b73c8e9b1f69d654d40e57b2d1/HandLandmark_Draw)
 ##### More Info : [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands#python-solution-api)
@@ -26,5 +28,4 @@ For this project, mediapip, OpenCV and screen_brightness_control must be install
 
 ##### To explore more on mediapipe and OpenCV, you can follow this [playlist](https://www.youtube.com/playlist?list=PLMoSUbG1Q_r8jFS04rot-3NzidnV54Z2q&fbclid=IwAR1UN8EMjGs7XvsQc91kYHXScDyGYMOT9ri-4ECMO2el9Lln2s9PtYfM48U)
 
----
-##### [Mediapipe Supports 64 bit version python](https://stackoverflow.com/questions/67665724/what-could-be-the-cause-for-the-mediapipe-installation-error-on-windows-with-pyt)
+

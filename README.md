@@ -25,3 +25,6 @@ For this project, mediapip, OpenCV and screen_brightness_control must be install
 --------------------------------------------------------------------------------------------------
 
 ##### To explore more on mediapipe and OpenCV, you can follow this [playlist](https://www.youtube.com/playlist?list=PLMoSUbG1Q_r8jFS04rot-3NzidnV54Z2q&fbclid=IwAR1UN8EMjGs7XvsQc91kYHXScDyGYMOT9ri-4ECMO2el9Lln2s9PtYfM48U)
+
+---
+##### [Mediapipe Supports 64 bit version python](https://stackoverflow.com/questions/67665724/what-could-be-the-cause-for-the-mediapipe-installation-error-on-windows-with-pyt)
